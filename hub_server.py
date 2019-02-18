@@ -8,7 +8,7 @@ import time
 import socket
 import urlparse
 import getopt
-import ptvsd
+"""import ptvsd"""
 
 class SecureHTTPServer(HTTPServer):
   def __init__(self, server_address, HandlerClass):
@@ -143,7 +143,7 @@ def run_server():
   httpd = SecureHTTPServer(server_address, FakeEfergyServer)
   sa = httpd.socket.getsockname()
   print "Serving HTTPS on", sa[0], "port", sa[1], "..."
-  ptvsd.enable_attach()
+  """ptvsd.enable_attach()"""
   httpd.serve_forever()
 
 
