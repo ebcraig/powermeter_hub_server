@@ -1,4 +1,4 @@
 powerhubserver.log
-db.pyc
+*.pyc
 .vscode
 readings.db
